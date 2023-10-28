@@ -169,7 +169,7 @@ if user_menu == 'Athlete Wise Analysis':
     selected_sport =  st.selectbox('Select A Sport',sport_list)
     temp_df = helper.create_v_height(df,selected_sport)
     fig,ax = plt.subplots(figsize=(20,20))
-    ax =sns.scatterplot(temp_df['Weight'],temp_df['Height'],hue=temp_df['Medal'],style=temp_df['Sex'],s=350)
+    ax =sns.scatterplot(x=temp_df['Weight'],y=temp_df['Height'],hue=temp_df['Medal'],style=temp_df['Sex'],s=350)
     st.pyplot(fig)
 
     st.title('Men Vs Women Participation')
