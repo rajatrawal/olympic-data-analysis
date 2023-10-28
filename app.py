@@ -1,4 +1,3 @@
-from cgi import print_arguments
 import plotly.express as px
 import streamlit as st
 import pandas as pd
